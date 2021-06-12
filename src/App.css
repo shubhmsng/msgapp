@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.root {
+  flex-grow: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex;
+  flex-direction: inherit !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menuButton {
+  margin-right: 10px !important;
+  justify-content: flex-start !important;
+  margin: 0 10px !important;
+}
+
+.title {
+  flex-grow: 1;
+  margin-top: 20px !important;
+}
+
+.cards-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.card {
+  margin: 10px;
+  max-width: 700px;
+}
+
+.MuiTypography-body2 {
+  font-weight: bold !important;
+}
+
+.MuiCardContent-root:last-child {
+  padding-top: 0 !important;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+}
+
+.delete-container {
+  background: #FF3500;
+  align-self: stretch;
+  margin: 16px 0;
+  border-radius: 8px;
+  margin-left: 16px;
   color: white;
+  padding: 10px 0;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-text > span {
+  transform: rotate(270deg);
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiSvgIcon-root {
+  padding: 15px 0 0 10px!important;
+}
+
+.delete-enter {
+  width: 0;
+}
+.delete-enter-active {
+  width: 44px;
+  transition: width 300ms;
+}
+
+.delete-exit-active {
+  width: 0;
+  transition: width 300ms;
 }
