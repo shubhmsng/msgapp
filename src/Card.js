@@ -25,7 +25,6 @@ function CardComponent({message, id, deleteMessage}) {
     
     const handleTouchEnd = () => {
         if (touchEnd - touchStart > 50) {
-            // do your stuff here for right swipe
             setShowDelete(true);
             setTouchStart(0);
             setTouchEnd(0);
