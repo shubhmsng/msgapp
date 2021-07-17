@@ -4,7 +4,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import getFormatedUpdateTime from './foramatTime';
+import getFormatedUpdateTime from './formatTime';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { CSSTransition } from 'react-transition-group';
 
