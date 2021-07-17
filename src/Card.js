@@ -8,7 +8,7 @@ import getFormatedUpdateTime from './formatTime';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { CSSTransition } from 'react-transition-group';
 
-const base_url = "http://message-list.appspot.com/";
+const base_url = "https://message-list.appspot.com/";
 
 function CardComponent({message, id, deleteMessage}) {
     const [showDelete, setShowDelete] = useState(false);
