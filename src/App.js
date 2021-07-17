@@ -4,7 +4,7 @@ import Header from './Header';
 import CardComponent from './Card';
 import './App.css';
 
-const base_url = "http://message-list.appspot.com/";
+const base_url = "https://message-list.appspot.com/";
 
 function App() {
   const [messages, setMessages] = useState([]);
